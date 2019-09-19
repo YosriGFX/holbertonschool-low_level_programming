@@ -22,7 +22,10 @@ putchar(m);
 putchar(' ');
 putchar(t);
 putchar(e);
-if (n != 57 || m != 56 || t != 57 || e != 57)
+if (n == 57 && m == 56 && t == 57 && e == 57)
+{
+}
+else
 {
 putchar(',');
 putchar(' ');
