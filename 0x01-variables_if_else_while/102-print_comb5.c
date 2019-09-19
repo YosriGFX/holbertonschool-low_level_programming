@@ -14,18 +14,14 @@ for (n = 48; n <= 57; n++)
 for (m = 48; m <= 57; m++)
 for (t = 48; t <= 57; t++)
 for (e = 48; e <= 57; e++)
-if (m < e && n <= t)
-if (m != e)
+if (m < e && m != e && n <= t)
 {
 putchar(n);
 putchar(m);
 putchar(' ');
 putchar(t);
 putchar(e);
-if (n == 57 && m == 56 && t == 57 && e == 57)
-{
-}
-else
+if (!(n == 57 && m == 56 && t == 57 && e == 57))
 {
 putchar(',');
 putchar(' ');
