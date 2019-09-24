@@ -2,7 +2,7 @@
 /**
  * _abs - Get the abs value of number
  * @i: integer of input
- * Return: Always 0
+ * Return: ||i||
  */
 int _abs(int i)
 {
