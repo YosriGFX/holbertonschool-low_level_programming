@@ -14,7 +14,7 @@ for (a = 0; a < 50; a++)
 d = c + b;
 c = b;
 b = d;
-printf("%lu",d);
+printf("%lu", d);
 if (a != 49)
 printf(", ");
 }
