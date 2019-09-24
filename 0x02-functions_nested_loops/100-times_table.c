@@ -17,6 +17,7 @@ p = (t * i);
 if (p > 9 && p < 100)
 {
 _putchar(' ');
+_putchar(' ');
 _putchar((p / 10) + '0');
 _putchar((p % 10) + '0');
 }
@@ -24,10 +25,12 @@ else if (p <= 9 && t != 0)
 {
 _putchar(' ');
 _putchar(' ');
+_putchar(' ');
 _putchar(p + '0');
 }
 else if (p > 99)
 {
+_putchar(' ');
 _putchar((p / 100) + '0');
 _putchar(((p / 10) % 10) + '0');
 _putchar((p % 10) + '0');
