@@ -6,18 +6,20 @@
  */
 int main(void)
 {
-unsigned long int a, b, c, d;
+unsigned long int a, b, c, d, e;
 b = 1;
 c = 0;
-for (a = 0; a < 50; a++)
+e = 0;
+{
+for (a = 0; a < 34; a++)
 {
 d = c + b;
 c = b;
 b = d;
-printf("%lu", d);
-if (a != 49)
-printf(", ");
+if ((b % 2) == 0)
+e += b;
 }
-printf("\n");
+printf("%lu\n", e);
+}
 return (0);
 }
