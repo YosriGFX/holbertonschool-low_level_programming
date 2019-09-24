@@ -1,20 +1,17 @@
 #include <stdio.h>
 /**
- * main - prints the sum of multipes
- * 
- * return: 0 always
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-int a, b, c;
+int a, b;
 for (a = 0; a < 1024; a++)
 {
-if ((a % 3) == 0)
+if (((a % 3) == 0) || ((a % 5) == 0))
 b += a;
-if ((a % 5) == 0)
-c += a;
 }
 printf("%i\n", b);
-printf("%i\n", a);
 return (0);
 }
