@@ -9,11 +9,11 @@ void print_square(int size)
 {
 int a, i;
 if (size <= 0)
-putchar('\n');
+_putchar('\n');
 for (a = 0; a < size; a++)
 {
 for (i = 0; i < size; i++)
-putchar('#');
-putchar('\n');
+_putchar('#');
+_putchar('\n');
 }
 }
