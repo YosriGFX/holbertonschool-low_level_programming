@@ -7,8 +7,6 @@
 void print_number(int n)
 {
 int k, d = 1, c = 1, a, i, count = 0;
-if (n == 0)
-_putchar('0');
 if (n < 0)
 {
 n = -n;
@@ -21,7 +19,7 @@ n /= 10;
 c = c * 10;
 count++;
 }
-_putchar((i / c) + '0');
+_putchar((i / c) +'0');
 for (a = 1; a <= count; a++)
 {
 d = c / 10;
