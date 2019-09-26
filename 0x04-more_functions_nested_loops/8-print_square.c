@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * print_square - function that prints a square, followed by a new line.
  * @size: is the size of the square
