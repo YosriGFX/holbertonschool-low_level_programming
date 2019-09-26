@@ -20,7 +20,7 @@ n /= 10;
 c = c * 10;
 count++;
 }
-if (count == 1)
+if ((count == 1) || (count == 0))
 i++;
 _putchar((i / c) +'0');
 for (a = 1; a <= count; a++)
@@ -28,7 +28,7 @@ for (a = 1; a <= count; a++)
 d = c / 10;
 k = i % c;
 k /= d;
-if (a == count)
+if ((a == count) && (a >= 3))
 k++;
 _putchar(k + '0');
 c = c / 10;
