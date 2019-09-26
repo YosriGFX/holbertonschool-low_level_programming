@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_number - function that prints an integer.
- * 
+ * @n : integer
  * Return: integer printed
  */
 void print_number(int n)
@@ -15,7 +15,7 @@ n = n * -1;
 _putchar('-');
 }
 i = n;
-while(n != 0)
+while (n != 0)
 {
 n /= 10;
 ++count;
@@ -25,7 +25,7 @@ c = c * 10;
 for (a = 1; a <= count; a++)
 {
 d = c / 10;
-_putchar(((i % c) / d) + '0');
+_putchar(((i % c) / d)+'0');
 c = c / 10;
 }
 }
