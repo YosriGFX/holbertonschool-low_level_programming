@@ -6,10 +6,9 @@
  */
 int _strlen(char *s)
 {
-int a = 0;
-while (*s)
+int a;
+while (*(s + a) != '\0')
 {
-*s++;
 a++;
 }
 return (a);
