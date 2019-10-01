@@ -12,7 +12,7 @@ a++;
 i = a;
 if (a % 2 != 0)
 i++;
-for (b = i / 2; b <= a; b++)
+for (b = i / 2; b < a; b++)
 _putchar(str[b]);
 _putchar('\n');
 }
