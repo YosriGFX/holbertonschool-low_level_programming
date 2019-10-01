@@ -10,7 +10,7 @@ int a = 0, b = 0;
 char c;
 while (s[a])
 a++;
-for (b = 0; b <= a / 2; b++)
+for (b = 0; b < a / 2; b++)
 {
 c = s[a - b - 1];
 s[a - b - 1] = s[b];
