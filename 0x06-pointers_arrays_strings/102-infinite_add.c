@@ -10,7 +10,7 @@
 */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int a = 0, b = 0, op, bg, d, r, add = 0;
+int a = 0, b = 0, op, bg, d, rr, add = 0;
 
 while (*(n1 + a) != '\0')
 a++;
@@ -24,10 +24,10 @@ if (size_r <= bg + 1)
 return (0);
 r[bg + 1] = '\0';
 a--, b--, size_r--;
-d = *(n1 + a) -48, r = *(n2 + b) -48;
+d = *(n1 + a) -48, rr = *(n2 + b) -48;
 while (bg >= 0)
 {
-op = d + r + add;
+op = d + rr + add;
 if (op >= 10)
 	add = op / 10;
 else
@@ -41,9 +41,9 @@ if (a > 0)
 else
 	d = 0;
 if (b > 0)
-	b--, r = *(n2 + b) -48;
+	b--, rr = *(n2 + b) -48;
 else
-	r = 0;
+	rr = 0;
 bg--, size_r--;
 }
 if (*(r) == '0')
@@ -51,3 +51,4 @@ return (r + 1);
 else
 return (r);
 }
+
