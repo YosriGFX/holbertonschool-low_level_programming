@@ -15,3 +15,4 @@ for (slen = 0; slen < n && src[slen] != '\0'; slen++)
 dest[dlen + slen] = src[slen];
 return (dest);
 }
+
