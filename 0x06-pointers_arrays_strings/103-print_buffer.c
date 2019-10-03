@@ -8,7 +8,7 @@
 */
 void print_buffer(char *b, int size)
 {
-int a, b, l;
+int a, bb, l;
 
 if (size <= 0)
 printf("\n");
@@ -17,12 +17,12 @@ else
 for (a = 0; a < size; a += 10)
 {
 printf("%.8x:", a);
-for (b = a; b < a + 10; b++)
+for (bb = a; bb < a + 10; bb++)
 {
-if (b % 2 == 0)
+if (bb % 2 == 0)
 printf(" ");
-if (b < size)
-printf("%.2x", *(b + b));
+if (bb < size)
+printf("%.2x", *(b + bb));
 else
 printf("  ");
 }
