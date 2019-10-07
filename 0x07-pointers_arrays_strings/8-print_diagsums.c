@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+
 /**
  * print_diagsums - prints the sums of the two diagonals of a square matrix
  * @a: pointer to start of matrix
@@ -9,11 +10,13 @@
  */
 void print_diagsums(int *a, int size)
 {
-int c = 0, sc = 0, sr = 0;
-for (; c < size; c++)
+int i = 0, sum_l = 0, sum_r = 0;
+
+for (; i < size; i++)
 {
-sc += *(a + c * size + c);
-sr += *(a + (c * size) + (size - 1 - c));
+sum_l += *(a + i * size + i);
+sum_r += *(a + (i * size) + (size - 1 - i));
 }
-printf("%c, %c\n", sc, sr);
+printf("%i, %i\n", sum_l, sum_r);
 }
+
