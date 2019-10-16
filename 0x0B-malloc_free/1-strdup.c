@@ -12,6 +12,7 @@ unsigned int a, b;
 if (str == NULL)
 return (NULL);
 for (a = 0; str[a] != '\0'; a++)
+;
 ret = (char *)malloc(sizeof(char) * (a + 1));
 if (ret == NULL)
 return (NULL);
