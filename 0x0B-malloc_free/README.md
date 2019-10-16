@@ -1,3 +1,3 @@
-## Malloc nad free
-# - char *create_array(unsigned int size, char c);
-# 
+# Malloc nad free
+##1/ char *create_array(unsigned int size, char c);
+## 
