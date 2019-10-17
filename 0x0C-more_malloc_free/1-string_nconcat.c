@@ -17,11 +17,7 @@ if (s2 == NULL)
 s2 = m;
 while (s1[a] != '\0')
 a++;
-while (s2[d] != '\0')
-d++;
-if (d <= n)
-n = d;
-p = malloc(a + n);
+p = malloc((a + (n * sizeof(*s2) + 1) * sizeof(*p)));
 if (p == NULL)
 return (NULL);
 while (b < a)
