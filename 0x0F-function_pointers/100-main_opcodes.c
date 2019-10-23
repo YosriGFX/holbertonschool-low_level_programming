@@ -1,5 +1,6 @@
 #include <stdlib.h>
-#include <stdio.h>/**
+#include <stdio.h>
+/**
  * main - prints the opcodes of main function
  * @argc: number of arguments passed to the function
  * @argv: array of pointers to arguments
