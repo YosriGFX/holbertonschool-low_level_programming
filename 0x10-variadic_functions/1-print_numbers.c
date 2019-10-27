@@ -10,22 +10,16 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-unsigned int a = 0, s = 0;
+unsigned int a = 0;
 va_list num;
 va_start(num, n);
 while (a < n)
 {
-printf("%i", va_arg(num, int));
+printf("%d", va_arg(num, int));
+if (a != n && separator)
+printf("%s", separator);
 a++;
-if (a != n)
-while (separator[s] != '\0')
-{
-printf("%c", separator[s]);
-s++;
 }
-else
 printf("\n");
-s = 0;
-}
 va_end(num);
 }
