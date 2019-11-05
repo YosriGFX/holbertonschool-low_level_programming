@@ -16,15 +16,15 @@ nele = malloc(sizeof(listint_t));
 if (nele == NULL)
 return (NULL);
 nele->n = n;
-nele->nn = NULL;
+nele->next = NULL;
 if (*head == NULL)
 {
 *head = nele;
 return (nele);
 }
 h = *head;
-while (h->nn != NULL)
-h = h->nn;
-h->nn = nele;
+while (h->next != NULL)
+h = h->next;
+h->next = nele;
 return (nele);
 }
