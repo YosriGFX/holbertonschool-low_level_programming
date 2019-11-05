@@ -10,7 +10,7 @@ int add = 0;
 while (head != NULL)
 {
 add += head->n;
-head = head->nn;
+head = head->next;
 }
 return (add);
 }
