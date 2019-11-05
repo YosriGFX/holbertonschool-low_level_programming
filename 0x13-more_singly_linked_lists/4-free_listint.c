@@ -7,11 +7,11 @@
  */
 void free_listint(listint_t *head)
 {
-listint_t *nn;
+listint_t *next;
 while (head != NULL)
 {
-nn = head->nn;
+next = head->next;
 free(head);
-head = nn;
+head = next;
 }
 }
