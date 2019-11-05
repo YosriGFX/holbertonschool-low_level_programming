@@ -12,7 +12,7 @@ while (h != NULL)
 {
 printf("%d\n", h->n);
 a++;
-h = h->nn;
+h = h->next;
 }
 return (a);
 }
