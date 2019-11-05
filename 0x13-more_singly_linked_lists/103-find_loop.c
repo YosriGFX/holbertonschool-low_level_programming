@@ -9,22 +9,22 @@ listint_t *find_listint_loop(listint_t *head)
 listint_t *old, *begin;
 old = head;
 begin = head;
-while (old && begin && begin->nn)
+while (old && begin && begin->next)
 {
-old = old->nn;
-begin = begin->nn->nn;
+old = old->next;
+begin = begin->next->next;
 if (old == begin)
 {
 old = head;
 break;
 }
 }
-if (!old || !begin || !begin->nn)
+if (!old || !begin || !begin->next)
 return (NULL);
 while (old != begin)
 {
-old = old->nn;
-begin = begin->nn;
+old = old->next;
+begin = begin->next;
 }
 return (begin);
 }
