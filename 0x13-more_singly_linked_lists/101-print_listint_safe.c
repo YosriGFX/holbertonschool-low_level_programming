@@ -50,7 +50,7 @@ return (count);
 count++;
 list = _rm(list, count, head);
 printf("[%p] %d\n", (void *)head, head->n);
-head = head->nn;
+head = head->next;
 }
 free(list);
 return (count);
