@@ -33,7 +33,7 @@ size_t free_listint_safe(listint_t **head)
 {
 size_t a, count = 0;
 listint_t **list = NULL;
-listint_t *nn;
+listint_t *next;
 if (head == NULL || *head == NULL)
 return (count);
 while (*head != NULL)
@@ -47,9 +47,9 @@ return (count);
 }
 count++;
 list = _realloc_mem(list, count, *head);
-nn = (*head)->nn;
+next = (*head)->next;
 free(*head);
-*head = nn;
+*head = next;
 }
 free(list);
 return (count);
