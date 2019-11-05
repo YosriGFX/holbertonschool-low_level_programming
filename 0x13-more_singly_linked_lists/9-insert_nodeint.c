@@ -16,7 +16,7 @@ return (NULL);
 old = *head;
 for (a = 1; a < idx  && old; a++)
 {
-old = old->nn;
+old = old->next;
 if (old == NULL)
 return (NULL);
 }
@@ -26,11 +26,11 @@ return (NULL);
 nele->n = n;
 if (!idx)
 {
-nele->nn = *head;
+nele->next = *head;
 *head = nele;
 return (nele);
 }
-nele->nn = old->nn;
-old->nn = nele;
+nele->next = old->next;
+old->next = nele;
 return (nele);
 }
