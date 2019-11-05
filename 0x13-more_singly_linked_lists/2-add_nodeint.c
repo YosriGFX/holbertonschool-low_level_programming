@@ -16,7 +16,7 @@ nele = malloc(sizeof(listint_t));
 if (nele == NULL)
 return (NULL);
 nele->n = n;
-nele->nn = *head;
+nele->next = *head;
 *head = nele;
 return (nele);
 }
