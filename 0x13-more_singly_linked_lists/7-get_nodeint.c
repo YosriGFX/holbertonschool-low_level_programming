@@ -12,7 +12,7 @@ if (head == NULL)
 return (NULL);
 for (a = 0; a < index; a++)
 {
-head = head->nn;
+head = head->next;
 if (head == NULL)
 return (NULL);
 }
