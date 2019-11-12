@@ -19,7 +19,7 @@ return (-1);
 }
 if (text_content)
 {
-while(text_content[b])
+while (text_content[b])
 b++;
 c = write(a, text_content, b);
 if (c == -1)
