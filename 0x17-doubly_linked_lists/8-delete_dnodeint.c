@@ -12,8 +12,9 @@ if ((*head)->next)
 	unsigned int a = 0, b = 0;
 	dlistint_t *delete;
 	dlistint_t *counter;
+
 	counter = *head;
-	while (counter != NULL)
+	while (counter)
 	{
 		counter = counter->next;
 		a++;
@@ -44,8 +45,5 @@ if ((*head)->next)
 	return (-1);
 }
 else
-{
-	head = NULL;
 	return (-1);
-}
 }
