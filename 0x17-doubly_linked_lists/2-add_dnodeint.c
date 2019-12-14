@@ -15,7 +15,6 @@ return (NULL);
 begin->n = n;
 begin->next = *head;
 begin->prev = NULL;
-
 *head = begin;
 return (begin);
 }
