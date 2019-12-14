@@ -25,7 +25,7 @@ else if (idx == count)
 {
 add_dnodeint_end(h, n);
 }
-else
+else if (idx <= count)
 {
 dlistint_t *temp = *h;
 dlistint_t *new = malloc(sizeof(dlistint_t));
