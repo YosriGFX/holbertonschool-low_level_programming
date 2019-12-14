@@ -12,5 +12,5 @@ while (h != NULL)
 h = (*h).next;
 a++;
 }
-return(a);
+return (a);
 }
