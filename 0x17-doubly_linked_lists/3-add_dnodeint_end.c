@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- * add_dnodeint - Write a function that
- * adds a new node at the beginning
+ * add_dnodeint_end - Write a function that
+ * adds a new node at the endding
  * @head: double pointer
  * @n: const int
  * Return: address or null
