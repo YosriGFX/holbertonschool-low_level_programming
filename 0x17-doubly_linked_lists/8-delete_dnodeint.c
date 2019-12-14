@@ -11,16 +11,17 @@ unsigned int a = 0, b = 0;
 dlistint_t *delete;
 dlistint_t *counter;
 counter = *head;
-delete = *head;
-if (delete == NULL)
+if (counter == NULL)
 	return (-1);
-while (counter)
+while (counter != NULL)
 {
 	counter = counter->next;
 	a++;
 }
 free(counter);
-if (index >= a)
+delete = *head;
+
+if (index > a)
 	return (-1);
 else
 {
@@ -28,22 +29,19 @@ if ((index == 0) && (delete->prev == NULL) && (delete->next != NULL))
 {
 	delete = delete->next;
 	delete->prev = NULL;
-	if (delete->next == NULL)
-		delete = NULL;
 	*head = delete;
 	free(delete);
 	return (1);
 }
-else
+else if (delete->next != NULL)
 {
 	for (b = 0; b < index - 1; b++)
-	{
-	delete = delete->next;
-	}
+		delete = delete->next;
 	delete->next = delete->next->next;
 	delete->next->prev = delete;
 	return (1);
 }
+*head = NULL;
 return (-1);
 }
 }
