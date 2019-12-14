@@ -17,7 +17,6 @@ while (temp)
 temp = temp->next;
 count++;
 }
-printf("%d\n---\n", count);
 if (idx == 0)
 {
 add_dnodeint(h, n);
