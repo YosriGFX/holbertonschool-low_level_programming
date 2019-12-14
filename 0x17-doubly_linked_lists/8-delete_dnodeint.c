@@ -29,6 +29,8 @@ return (1);
 else
 {
 for (a = 0; a < index - 1; a++)
+if (delete->next == NULL)
+return(-1);
 delete = delete->next;
 delete->next = delete->next->next;
 delete->next->prev = delete;
