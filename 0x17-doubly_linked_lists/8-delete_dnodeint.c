@@ -23,7 +23,7 @@ return (1);
 else
 {
 *head = NULL;
-return (-1);
+return (1);
 }
 }
 else
