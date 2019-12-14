@@ -42,6 +42,6 @@ else if (delete->next != NULL)
 	return (1);
 }
 *head = NULL;
-return (-1);
+return (1);
 }
 }
