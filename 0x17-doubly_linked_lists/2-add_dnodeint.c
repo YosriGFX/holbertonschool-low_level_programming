@@ -12,9 +12,10 @@ dlistint_t *begin;
 begin = malloc(sizeof(dlistint_t));
 if (begin == NULL)
 return (NULL);
-(*begin).n = n;
-(*begin).prev = NULL;
-(*begin).next = *head;
+begin->n = n;
+begin->next = *head;
+begin->prev = NULL;
+
 *head = begin;
 return (begin);
 }
