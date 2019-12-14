@@ -1,50 +1,56 @@
 #include "lists.h"
 /**
- * insert_dnodeint_at_index - insert node at index
- * @h: pointer to list
- * @idx: index
- * @n: int
- * Return: the address of the new node, or NULL
+ * insert_dnodeint_at_index - function to insert node at given index
+ * @h: double pointer type to head of list
+ * @idx: index at which node will be added
+ * @n: int type for data to be added
+ * Return: node if successful, NULL if failed
  */
+
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-if (*h != NULL)
-{
+dlistint_t *node = malloc(sizeof(dlistint_t));
+dlistint_t *temp;
 unsigned int count = 0;
-dlistint_t *temp = *h;
-while (temp)
+if (node == NULL)
+return (NULL);
+node->n = n;
+node->prev = NULL;
+node->next = NULL;
+if (*h == NULL)
+{
+*h = node;
+node->next = NULL;
+return (node);
+}
+temp = *h;
+if (idx == 0)
+{
+node->next = temp;
+temp->prev = node;
+*h = node;
+return (node);
+}
+while (count != (idx - 1))
 {
 temp = temp->next;
 count++;
-}
-if (idx == 0)
+if (temp == NULL)
 {
-add_dnodeint(h, n);
-}
-else if (idx == count)
-{
-add_dnodeint_end(h, n);
-}
-else if (idx <= count)
-{
-dlistint_t *temp = *h;
-dlistint_t *new = malloc(sizeof(dlistint_t));
-unsigned int a;
-for (a = 0; temp != NULL; a++)
-{
-if (idx == a + 1)
-{
-new->n = n;
-new->next = temp->next;
-new->prev = temp;
-if (temp->next != NULL)
-temp->next->prev = new;
-temp->next = new;
-return (new);
-}
-temp = temp->next;
-}
-}
-}
+free(node);
 return (NULL);
+}
+}
+node->next = temp->next;
+node->prev = temp;
+if (temp->next == NULL)
+{
+temp->next = node;
+}
+else
+{
+temp->next->prev = node;
+temp->next = node;
+}
+return (node);
 }
