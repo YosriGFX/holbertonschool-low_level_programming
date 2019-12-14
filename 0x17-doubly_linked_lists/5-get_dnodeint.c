@@ -7,14 +7,13 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-unsigned int i;
-for (i = 0; head != NULL; i++)
+unsigned int a;
+dlistint_t *grap = head;
+for (a = 0; grap != NULL; a++)
 {
-if (index == i)
-{
-return (head);
-}
-head = (*head).next;
+if (index == a)
+return (grap);
+grap = grap->next;
 }
 return (NULL);
 }
