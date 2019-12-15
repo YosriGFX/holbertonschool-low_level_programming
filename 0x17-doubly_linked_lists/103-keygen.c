@@ -67,10 +67,10 @@ int f6(char p)
 		return ((res ^ 0xE5) & 0x3F);
 }
 /**
-	* main - generates a key, mostly copied from server.
-	* @ac: argument count
-	* @av: argument vectors
-	* Return: 0 on success
+	* main - generates a key.
+	* @ac: argc.
+	* @av: argv.
+	* Return: 0 if succeedded.
 	*/
 int main(int ac, char *av[])
 {
