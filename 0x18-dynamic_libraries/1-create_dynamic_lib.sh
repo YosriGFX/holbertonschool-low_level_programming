@@ -1,2 +1,3 @@
-#!/usr/bin/bash
-gcc -shared liball.so *.c
+#!/bin/bash
+gcc *.c -c -fPIC
+gcc -shared *.o -o liball.so
