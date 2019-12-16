@@ -1,4 +1,4 @@
-nclude "holberton.h"
+#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -9,6 +9,5 @@ nclude "holberton.h"
 int main(void)
 {
     printf("%d\n", _strlen("Holberton"));
-    return (EXIT_SUCCESS);
+    return (0);
 }
-
