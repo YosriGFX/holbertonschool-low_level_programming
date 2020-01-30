@@ -1,6 +1,7 @@
 
 ## 0x1B. C - Sorting algorithms & Big O
 Foundations - Low-level programming & Algorithm ― Data structures and Algorithms
+
 **_by Alexandre Gautier, Software Engineer at Holberton, Inc._**
 ##
 
