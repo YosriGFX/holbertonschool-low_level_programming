@@ -30,7 +30,6 @@
 -   `225`  [0x0E. C - Structures, typedef]
 -   `226`  [0x0F. C - Function pointers]
 -   `253`  [0x1A. C - Hash tables]
--   `248`  [0x1B. C - Sorting algorithms & Big O]
 -   `Loading..`  [0x.. To be continued]
 
 ##
