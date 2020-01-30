@@ -403,6 +403,6 @@ alex@/tmp/sort$
 
 ##
 **Proudly written by:**
-- **Yosri Ghorbel**
-- **Adib Grouz**
+- **[Yosri Ghorbel](https://github.com/YosriGFX)**
+- **[Adib Gruise](https://github.com/s0m35h1t)**
 ##
