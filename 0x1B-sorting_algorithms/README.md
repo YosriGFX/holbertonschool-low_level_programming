@@ -4,10 +4,7 @@ Foundations - Low-level programming & Algorithm ― Data structures and Algorith
 
 **_by Alexandre Gautier, Software Engineer at Holberton, Inc._**
 ##
-
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/248/willy-wonka.png)  
-
-
+![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/248/willy-wonka.png)
 ## More Info
 
 ### Data Structure and Functions
@@ -106,7 +103,7 @@ Write in the file  `0-O`, the big O notations of the time complexity of the Bubb
 -   in the worst case
 
 ```
-alex@/tmp/sort$ cat 0-main.c 
+alex@/tmp/sort$ cat 0-main.c
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
@@ -155,7 +152,7 @@ alex@/tmp/sort$ ./bubble
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
-alex@/tmp/sort$ 
+alex@/tmp/sort$
 
 ```
 
@@ -168,8 +165,8 @@ alex@/tmp/sort$
 
 #### 1. Insertion sort  mandatory
 
-  
-  
+
+
 
 Write a function that sorts a doubly linked list of integers in ascending order using the  [Insertion sort]
 
@@ -281,8 +278,8 @@ alex@/tmp/sort$
 
 #### 2. Selection sort  mandatory
 
-  
-  
+
+
 
 Write a function that sorts an array of integers in ascending order using the  [Selection sort]
 -   Prototype:  `void selection_sort(int *array, size_t size);`
