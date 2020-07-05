@@ -1,14 +1,14 @@
 #include "search_algos.h"
 
 /**
-  * adv_binary_recursive - function that searches recursively
+  * advanced_binary_recursive - function that searches recursively
   * @array: pointer
   * @left: size_t
   * @right: size_t
   * @value: int
   * Return: int
   */
-int adv_binary_recursive(int *array, size_t left, size_t right, int value)
+int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
 {
 size_t i;
 if (right < left)
@@ -28,9 +28,9 @@ return (i);
 }
 if (array[i] >= value)
 {
-return (adv_binary_recursive(array, left, i, value));
+return (advanced_binary_recursive(array, left, i, value));
 }
-return (adv_binary_recursive(array, i + 1, right, value));
+return (advanced_binary_recursive(array, i + 1, right, value));
 }
 
 /**
