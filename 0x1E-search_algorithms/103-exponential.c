@@ -32,12 +32,11 @@ return (-1);
 }
 
 /**
-  * exponential_search - Searches using exponential search.
-  * @array: A pointer to the first element of the array to search.
-  * @size: The size of the array.
-  * @value: The value to search for.
-  *
-  * Return: NULL, -1, the index where the value is located.
+  * exponential_search - function that searches using exponential search
+  * @array: pointer
+  * @size: size_t
+  * @value: int
+  * Return: int
   */
 int exponential_search(int *array, size_t size, int value)
 {
